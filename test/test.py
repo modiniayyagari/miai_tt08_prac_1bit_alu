@@ -35,7 +35,7 @@ async def test_project(dut):
     # Wait for one clock cycle to see the output values
     await ClockCycles(dut.clk, 1)
     alu_output = dut.uo_out.value
-    dut._log.info("MIAI: ALU for Output AND = %s", % alu_output)
+    dut._log.info("MIAI: ALU for Output AND = ", format(alu_output))
 
     # The following assertion is just an example of how to check the output values.
     # Change it to match the actual expected output of your module:
