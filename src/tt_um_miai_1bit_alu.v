@@ -24,7 +24,7 @@ wire alu_data_out;
 wire zero_flag;
     
 //Instantiating 1-bit ALU
-module alu u_alu_0 ( 
+alu u_alu_0 ( 
     .aluctrl      (alu_ctrl), 
     .data_in_1    (alu_in_1), 
     .data_in_2    (alu_in_2), 
