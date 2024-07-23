@@ -36,7 +36,8 @@ module alu u_alu_0 (
 // All output pins must be assigned. If not used, assign to 0.
 //MIAI assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
 
-assign alu_ctrl = ui_in[7];
+assign alu_ctrl[1] = ui_in[7];
+assign alu_ctrl[0] = ui_in[6];
 assign alu_in_1 = ui_in[0];
 assign alu_in_2 = ui_in[1];
     
